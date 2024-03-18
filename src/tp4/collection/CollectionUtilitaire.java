@@ -7,5 +7,6 @@ public class CollectionUtilitaire {
         for (int i=0; i<premiereListeDEntiers.size(); i++) {
             System.out.println(premiereListeDEntiers.get(i));
         }
+        System.out.println("---------------------------");
     }
 }

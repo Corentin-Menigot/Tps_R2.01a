@@ -33,6 +33,13 @@ public class TestIterator {
                 "d'entiers", deuxiemeListeDEntiers);
     // Enlever les entiers inferieurs à 10 dans la deuxième liste d'entiers enutilisant un WHILE
         // A COMPLETER
+        int i=0;
+        while (i<deuxiemeListeDEntiers.size()) {
+            if (deuxiemeListeDEntiers.get(i)<10) {
+                deuxiemeListeDEntiers.remove(i);
+            }
+            i++;
+        }
         // Affichage de la deuxième liste d'entiers après filtre
         CollectionUtilitaire.afficheCollection("Affichage de la deuxième liste " +
                 "d'entiers après filtre", deuxiemeListeDEntiers);
