@@ -19,6 +19,11 @@ public class TestIterator {
                 "d'entiers", premiereListeDEntiers);
     // Enlever les entiers inferieurs à 10 dans la première liste d'entiers en
         // utilisant un FOR
+        for (int i=0; i<premiereListeDEntiers.size(); i++) {
+            if (premiereListeDEntiers.get(i)<10) {
+                premiereListeDEntiers.remove(i);
+            }
+        }
     // A COMPLETER
         // Affichage de la liste première d'entiers après filtre
         CollectionUtilitaire.afficheCollection("Affichage de la liste première " +
