@@ -1,6 +1,7 @@
 package tp4.collection;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class TestIterator {
     public static void main(String[] args) {
@@ -14,6 +15,8 @@ public class TestIterator {
         premiereListeDEntiers.add(5);
         // Création d'une deuxième liste d'entiers
         ArrayList<Integer> deuxiemeListeDEntiers = new ArrayList<>(premiereListeDEntiers);
+        // Création d'une troisème liste d'entiers
+        ArrayList<Integer> troisiemeListeDEntiers = new ArrayList<>(premiereListeDEntiers);
         // Affichage de la première liste d'entiers
         CollectionUtilitaire.afficheCollection("Affichage de la première liste " +
                 "d'entiers", premiereListeDEntiers);
@@ -43,5 +46,17 @@ public class TestIterator {
         // Affichage de la deuxième liste d'entiers après filtre
         CollectionUtilitaire.afficheCollection("Affichage de la deuxième liste " +
                 "d'entiers après filtre", deuxiemeListeDEntiers);
+        // Affichage de la troisième liste d'entiers
+        CollectionUtilitaire.afficheCollection("Affichage de la troisème liste " +
+                "d'entiers", troisiemeListeDEntiers);
+        //iterator
+        for (Iterator itr = troisiemeListeDEntiers.iterator(); itr.hasNext();) {
+            if (10 > (int) itr.next()) {
+                itr.remove();
+            }
+        }
+        // Affichage de la troisième liste d'entiers après filtre
+        CollectionUtilitaire.afficheCollection("Affichage de la troisème liste " +
+                "d'entiers après filtre", troisiemeListeDEntiers);
     }
 }
