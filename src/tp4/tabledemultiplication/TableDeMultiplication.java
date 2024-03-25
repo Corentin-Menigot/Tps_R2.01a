@@ -1,4 +1,45 @@
 package tp4.tabledemultiplication;
 
+import java.util.ArrayList;
+
 public class TableDeMultiplication {
-}
+    //attributs
+    int nombreTable;
+    ArrayList<Multiplication> multiplications = new ArrayList();
+    final int DebutTable = 1;
+    final int FinTable = 10;
+
+    //constructeurs
+    public TableDeMultiplication(int nombreTable, boolean estMelange) {
+        this.nombreTable=nombreTable;
+        this.initialisation();
+        if (estMelange) {
+            this.melange();
+        }
+    }
+
+    //méthodes
+    private void initialisation() {
+        for (int i=DebutTable; i<=FinTable; i++) {
+            this.multiplications.add(new Multiplication(nombreTable, i));
+        }
+    }
+    private void melange() {
+
+    }
+    public int getNombreReponsesJustes() {
+        int reponsesJustes=0;
+        for (int i=0; i<FinTable; i++) {
+            if (this.multiplications.get(i).isReponseJuste()) {
+                reponsesJustes++;
+            }
+        }
+        return reponsesJustes;
+    }
+    public int getNombreDeMultiplications() {
+        return multiplications.size();
+    }
+    public Multiplication getMultiplication(int index) {
+        return this.multiplications.get(index);
+    }
+ }
