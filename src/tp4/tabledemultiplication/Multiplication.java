@@ -19,7 +19,7 @@ public class Multiplication {
     //méthodes
     public void setReponseUtilisateur(int reponse) throws ErreurMultiplicationException {
         this.reponseUtilisateur=reponse;
-        if (modeSansErreur && !this.isReponseJuste()) {
+        if (this.modeSansErreur & !this.isReponseJuste()) {
             throw new ErreurMultiplicationException();
         }
     }
