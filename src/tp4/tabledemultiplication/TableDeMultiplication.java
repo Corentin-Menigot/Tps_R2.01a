@@ -8,20 +8,22 @@ public class TableDeMultiplication {
     ArrayList<Multiplication> multiplications = new ArrayList<>();
     final int DebutTable = 1;
     final int FinTable = 10;
+    boolean modeSansErreur;
 
     //constructeurs
-    public TableDeMultiplication(int nombreTable, boolean estMelange) {
+    public TableDeMultiplication(int nombreTable, boolean estMelange, boolean modeSansErreur) {
         this.nombreTable=nombreTable;
         this.initialisation();
         if (estMelange) {
             this.melange();
         }
+        this.modeSansErreur = modeSansErreur;
     }
 
     //méthodes
     private void initialisation() {
         for (int i=DebutTable; i<=FinTable; i++) {
-            this.multiplications.add(new Multiplication(nombreTable, i));
+            this.multiplications.add(new Multiplication(nombreTable, i, modeSansErreur));
         }
     }
     private void melange() {

@@ -2,7 +2,7 @@ package tp4.tabledemultiplication;
 import java.util.Scanner;
 
 public class TestTableDeMultiplication {
-    private static void demandeReponseUtilisateur(Multiplication multiplication){
+    private static void demandeReponseUtilisateur(Multiplication multiplication) {
         Scanner entree = new Scanner(System.in);
         // Affichage de la multiplication
         System.out.print(multiplication);
@@ -20,6 +20,7 @@ public class TestTableDeMultiplication {
             demandeReponseUtilisateur(multiplication);
         }
     }
+
     public static void main(String[] args) {
         Scanner lecteur = new Scanner(System.in);
         int nombreTable;
@@ -43,19 +44,22 @@ public class TestTableDeMultiplication {
             melange = lecteur.nextInt();
             lecteur.nextLine();
         }
-        boolean estMelange = false;
 
+        boolean estMelange = false;
         if (melange == 2) {
             estMelange = true;
         }
 
-        TableDeMultiplication table = new TableDeMultiplication(nombreTable, estMelange);
+        System.out.print("Mode sans erreur true ou false ? ");
+        boolean sansErreur = lecteur.nextBoolean();
+        lecteur.nextLine();
+
+        TableDeMultiplication table = new TableDeMultiplication(nombreTable, estMelange, sansErreur);
 
         System.out.println("Donner les réponses aux multiplications : ");
-        int reponse;
         for (int i = 0; i < table.getNombreDeMultiplications(); i++) {
             demandeReponseUtilisateur(table.getMultiplication(i));
         }
-        System.out.println("Nombre de réponses justes : "+table.getNombreReponsesJustes());
+        System.out.println("Nombre de réponses justes : " + table.getNombreReponsesJustes());
     }
 }
