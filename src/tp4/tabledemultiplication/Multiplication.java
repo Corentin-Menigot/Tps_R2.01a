@@ -13,8 +13,11 @@ public class Multiplication {
     }
 
     //méthodes
-    public void setReponseUtilisateur(int reponse) {
+    public void setReponseUtilisateur(int reponse) throws ErreurMultiplicationException {
         this.reponseUtilisateur=reponse;
+        if (!this.isReponseJuste()) {
+            throw new ErreurMultiplicationException();
+        }
     }
     public boolean isReponseJuste() {
         return reponseUtilisateur == terme1*terme2;
