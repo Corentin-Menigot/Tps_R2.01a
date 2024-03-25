@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class TableDeMultiplication {
     //attributs
     int nombreTable;
-    ArrayList<Multiplication> multiplications = new ArrayList();
+    ArrayList<Multiplication> multiplications = new ArrayList<>();
     final int DebutTable = 1;
     final int FinTable = 10;
 
@@ -25,7 +25,14 @@ public class TableDeMultiplication {
         }
     }
     private void melange() {
-
+        ArrayList<Multiplication> multiplicationsTemp = new ArrayList<>();
+        int random;
+        for (int i = 0; i<FinTable; i++) {
+            random = (int) (Math.random()*this.getNombreDeMultiplications());
+            multiplicationsTemp.add(this.getMultiplication(random));
+            this.multiplications.remove(random);
+        }
+        this.multiplications=multiplicationsTemp;
     }
     public int getNombreReponsesJustes() {
         int reponsesJustes=0;
