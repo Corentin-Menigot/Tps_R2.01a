@@ -27,6 +27,18 @@ public class Dalton implements Comparable<Dalton> {
             return 1;
         }
     }
+    public static final Comparator<Dalton> comparateurNomSolution2 = new Comparator<Dalton>() {
+        @Override
+        public int compare(Dalton d1, Dalton d2) {
+            if (d1.getNom().compareTo(d2.getNom())<0) {
+                return -1;
+            } else if (d1.getNom().equals(d2.getNom())) {
+                return 0;
+            } else {
+                return 1;
+            }
+        }
+    } ;
     @Override
     public String toString() {
         return this.nom+" ("+this.getTaille()+")";
