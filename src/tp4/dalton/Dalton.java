@@ -27,4 +27,8 @@ public class Dalton implements Comparable<Dalton> {
             return 1;
         }
     }
+    @Override
+    public String toString() {
+        return this.nom+" ("+this.getTaille()+")";
+    }
 }
