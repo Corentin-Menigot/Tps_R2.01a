@@ -1,13 +1,15 @@
 package tp4.collection;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.TreeSet;
 
 public class CollectionUtilitaire {
-    public static void afficheCollection(String s, ArrayList<Integer> premiereListeDEntiers) {
-        System.out.println(s);
-        for (int i=0; i<premiereListeDEntiers.size(); i++) {
-            System.out.println(premiereListeDEntiers.get(i));
-        }
-        System.out.println("---------------------------");
+        public static <T> void afficheCollection(String message, Collection<T> collection) {
+            System.out.println(message);
+            for (T element : collection) {
+                System.out.println(element);
+            }
+            System.out.println();
     }
 }
