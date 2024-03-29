@@ -1,4 +1,10 @@
 package tp4.dalton;
 
-public class ComparateurNom {
+import java.util.Comparator;
+
+public class ComparateurNom implements Comparator<Dalton> {
+    @Override
+    public int compare(Dalton dalton, Dalton t1) {
+        return 0;
+    }
 }
