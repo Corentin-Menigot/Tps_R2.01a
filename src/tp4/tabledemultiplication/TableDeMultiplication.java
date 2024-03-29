@@ -13,11 +13,11 @@ public class TableDeMultiplication {
     //constructeurs
     public TableDeMultiplication(int nombreTable, boolean estMelange, boolean modeSansErreur) {
         this.nombreTable=nombreTable;
+        this.modeSansErreur = modeSansErreur;
         this.initialisation();
         if (estMelange) {
             this.melange();
         }
-        this.modeSansErreur = modeSansErreur;
     }
 
     //méthodes
