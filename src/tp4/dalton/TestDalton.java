@@ -29,15 +29,15 @@ public class TestDalton {
         // Un des daltons ne sera pas conservé
         afficheCollection("Les daltons triés par taille :", lesDaltonsTaille);
         // Faire un ensemble triés des daltons avec le comparateur de Nom (solution 1)
-        TreeSet<Dalton> lesDaltonsNom = new TreeSet<Dalton>(new ComparateurNom());
-        lesDaltonsNom.addAll(lesDaltons);
-        // Affichage
-        afficheCollection("Les daltons triés par nom :", lesDaltonsNom);
-        // Faire un ensemble triés des daltons avec le comparateur de Nom (solution ,2)
-        TreeSet<Dalton> lesDaltonsNom2 = new
-                TreeSet<Dalton>(Dalton.comparateurNomSolution2);
-        lesDaltonsNom2.addAll(lesDaltons);
-        // Affichage
-        afficheCollection("Les daltons triés par nom :", lesDaltonsNom2);
+//        TreeSet<Dalton> lesDaltonsNom = new TreeSet<Dalton>(new ComparateurNom());
+//        lesDaltonsNom.addAll(lesDaltons);
+//        // Affichage
+//        afficheCollection("Les daltons triés par nom :", lesDaltonsNom);
+//        // Faire un ensemble triés des daltons avec le comparateur de Nom (solution ,2)
+//        TreeSet<Dalton> lesDaltonsNom2 = new
+//                TreeSet<Dalton>(Dalton.comparateurNomSolution2);
+//        lesDaltonsNom2.addAll(lesDaltons);
+//        // Affichage
+//        afficheCollection("Les daltons triés par nom :", lesDaltonsNom2);
     }
 }
