@@ -51,7 +51,13 @@ public class Etudiant extends Personne implements Comparable<Etudiant>{
     public boolean existGroupe() {
         return groupe!=null;
     }
-    public boolean isContainedGroupe(Groupe groupe) { return this.groupe.containsEtudiant(this);}
+    public boolean isContainedGroupe(Groupe groupe) {
+        if (existGroupe()) {
+            return this.groupe == groupe;
+        } else {
+            return false;
+        }
+    }
     @Override
     public String getMail() { return getPrenom()+"."+getNom()+"@etu.univ-grenoble-alpes.fr";}
     @Override
