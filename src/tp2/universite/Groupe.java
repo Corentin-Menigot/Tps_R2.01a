@@ -11,7 +11,7 @@ public class Groupe {
 
     //constructeur de la classe groupe
     public Groupe(String libelle) {
-        this.libelle=libelle;
+        setLibelle(libelle);
     }
 
     //getters de la classe Groupe
