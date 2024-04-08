@@ -13,6 +13,6 @@ public class Addition extends Operation {
     }
     @Override
     public String toString() {
-        return super.getTerme1()+"+"+super.getTerme2();
+        return super.getTerme1()+" + "+super.getTerme2()+" = ";
     }
 }
