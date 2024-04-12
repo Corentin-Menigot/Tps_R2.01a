@@ -1,0 +1,13 @@
+[2024-04-12T10:33:41.116513724+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TestTableDOperation main | Mode sans erreur false
+[2024-04-12T10:33:41.134498+02:00[Europe/Paris]] SEVERE     | (tp5) tp5.tabledoperation.TableDOperation <clinit> | Cannot read configuration file
+[2024-04-12T10:33:41.139088235+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 13.3 et 7.3
+[2024-04-12T10:33:41.141557283+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 8.2 et 8.2
+[2024-04-12T10:33:41.142033509+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 2.1 et 11.6
+[2024-04-12T10:33:41.142420257+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 5.2 et 2.4
+[2024-04-12T10:33:41.142753339+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 6.9 et 6.0
+[2024-04-12T10:33:41.143102636+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TestTableDOperation main | Type d'operation : ADDITION
+[2024-04-12T10:34:22.089445904+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation getNombreReponsesJustes | getNombreDeReponsesJustes | Une réponse juste de l'utilisateur
+[2024-04-12T10:34:22.090928461+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation getNombreReponsesJustes | getNombreDeReponsesJustes | Une réponse juste de l'utilisateur
+[2024-04-12T10:34:22.092483003+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation getNombreReponsesJustes | getNombreDeReponsesJustes | Une réponse juste de l'utilisateur
+[2024-04-12T10:34:22.093595727+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation getNombreReponsesJustes | getNombreDeReponsesJustes | Une réponse juste de l'utilisateur
+[2024-04-12T10:34:22.093988189+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation getNombreReponsesJustes | getNombreDeReponsesJustes | Une réponse juste de l'utilisateur
