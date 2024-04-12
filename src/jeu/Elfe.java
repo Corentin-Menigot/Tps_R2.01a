@@ -1,6 +1,9 @@
 package jeu;
 
 public class Elfe extends Guerrier{
+    //constructeur
+    public Elfe(Chateau chateau) {super(chateau);}
+
     //méthodes de la classe Elfe
     @Override
     public int getForce() {

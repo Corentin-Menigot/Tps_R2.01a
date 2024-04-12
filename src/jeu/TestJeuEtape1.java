@@ -16,19 +16,19 @@ public class TestJeuEtape1 {
         // étape 5 : tester les combats
         
         // A COMPLETER : Création d'un objet nain de type Nain puis afficher les caractéristiques du guerrier crée
-        Nain nain = new Nain();
+        Nain nain = new Nain(new Chateau(Couleur.Bleu));
         GuerrierUtilitaire.printlnUnite(nain);
    
         // A COMPLETER : Création d'un objet elfe de type Elfe puis afficher les caractéristiques du guerrier crée
-        Elfe elfe = new Elfe();
+        Elfe elfe = new Elfe(new Chateau(Couleur.Rouge));
         GuerrierUtilitaire.printlnUnite(elfe);
     
         // A COMPLETER : Création d'un objet chefNain de type ChefNain puis afficher les caractéristiques du guerrier crée
-        ChefNain chefNain = new ChefNain();
+        ChefNain chefNain = new ChefNain(new Chateau(Couleur.Bleu));
         GuerrierUtilitaire.printlnUnite(chefNain);
 
         // A COMPLETER : Création d'un objet chefElfe de type ChefElfe puis afficher les caractéristiques du guerrier crée
-        ChefElfe chefElfe = new ChefElfe();
+        ChefElfe chefElfe = new ChefElfe(new Chateau(Couleur.Rouge));
         GuerrierUtilitaire.printlnUnite(chefElfe);
 
         // A COMPLETER : nain attaque elfe (afficher le combat)

@@ -4,14 +4,19 @@ import jdk.jshell.execution.Util;
 
 public abstract class Guerrier {
     //attributs de la classe Guerrier
-    private int force;
+    private final int FORCE_DE_BASE = 10;
+    private final int PV_MAX_DE_BASE = 100;
+    private final int RESSOURCE_BASE = 1;
     private int pointsDeVie;
+    private Chateau chateau;
 
     //constructeurs de la classe Guerrier
-    Guerrier() { this.force=10; this.pointsDeVie=100;}
+    Guerrier(Chateau chateau) {
+        this.pointsDeVie=100;
+        this.chateau = chateau;}
 
     //getters de la classe Guerrier
-    public int getForce() {return this.force;}
+    public int getForce() {return this.FORCE_DE_BASE;}
     public int getPointDeVie() { return this.pointsDeVie;}
 
     //méthodes de la classe Guerrier
