@@ -15,12 +15,12 @@ public class TestEtape2 {
             pv= nain.getPointDeVie();
             elfe.attaquer(nain);
             System.out.print("Dégats subits: "+(pv-nain.getPointDeVie())+"\nnain: ");
-            GuerrierUtilitaire.afficheGuerrier(nain);
+            GuerrierUtilitaire.printUnite(nain);
             System.out.println("Le nain attaque l'elfe:");
             pv= elfe.getPointDeVie();
             nain.attaquer(elfe);
             System.out.print("Dégats subits: "+(pv-elfe.getPointDeVie())+"\nelfe: ");
-            GuerrierUtilitaire.afficheGuerrier(elfe);
+            GuerrierUtilitaire.printUnite(elfe);
             System.out.println("|------------------------------------------------------|");
         }
         if (elfe.estVivant()) {
@@ -36,12 +36,12 @@ public class TestEtape2 {
             pv= chefNain.getPointDeVie();
             chefElfe.attaquer(chefNain);
             System.out.print("Dégats subits: "+(pv-chefNain.getPointDeVie())+"\nchef nain: ");
-            GuerrierUtilitaire.afficheGuerrier(chefNain);
+            GuerrierUtilitaire.printUnite(chefNain);
             System.out.println("Le chef nain attaque le chef elfe:");
             pv= chefElfe.getPointDeVie();
             nain.attaquer(chefElfe);
             System.out.print("Dégats subits: "+(pv-chefElfe.getPointDeVie())+"\nchef elfe: ");
-            GuerrierUtilitaire.afficheGuerrier(chefElfe);
+            GuerrierUtilitaire.printUnite(chefElfe);
             System.out.println("|------------------------------------------------------|");
         }
         if (elfe.estVivant()) {

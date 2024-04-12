@@ -15,21 +15,20 @@ public abstract class Guerrier {
     public int getPointDeVie() { return this.pointsDeVie;}
 
     //méthodes de la classe Guerrier
-    public void setPointDeVie(int pointDeVie) {
+    private void setPointDeVie(int pointDeVie) {
         if (pointDeVie<0) {
             this.pointsDeVie=0;
         } else {
             this.pointsDeVie=pointDeVie;
         }
     }
+
     public boolean estVivant() { return this.pointsDeVie>0;}
+
     public void attaquer(Guerrier guerrier) {
-        int degats=GuerrierUtilitaire.de3(this.getForce());
+        int degats=PlateauUtilitaire.De3(this.getForce());
         System.out.println("Dégats infligés: "+degats);
         guerrier.subirDegats(degats);
     }
     protected void subirDegats(int degats) { setPointDeVie(this.pointsDeVie-degats);}
-
-
-
 }
