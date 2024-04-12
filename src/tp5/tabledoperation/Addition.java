@@ -2,8 +2,8 @@ package tp5.tabledoperation;
 
 public class Addition extends Operation {
     //constructeur
-    public Addition(double terme1, double terme2) {
-        super(terme1, terme2);
+    public Addition(double terme1, double terme2, boolean modeSansErreur) {
+        super(terme1, terme2, modeSansErreur);
     }
 
     //méthodes

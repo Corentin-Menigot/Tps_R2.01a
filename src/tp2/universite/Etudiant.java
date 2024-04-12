@@ -27,12 +27,12 @@ public class Etudiant extends Personne implements Comparable<Etudiant>{
         this.adresseParent=adresseParent;
     }
     public void setGroupe(Groupe groupe) {
-        if (this.groupe!=groupe) {
-            if (isContainedGroupe(this.groupe)) {
-                this.groupe.removeEtudiant(this);
-            }
-            this.groupe = groupe;
-            groupe.getEtudiants().add(this);
+        if (this.groupe != groupe & this.groupe != null & groupe != null) {
+            this.groupe.removeEtudiant(this);
+        }
+        this.groupe = groupe;
+        if (groupe != null && !this.groupe.containsEtudiant(this)) {
+            this.groupe.addEtudiant(this);
         }
     }
 

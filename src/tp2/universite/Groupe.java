@@ -23,16 +23,20 @@ public class Groupe {
         this.libelle=libelle;
     }
     public void addEtudiant(Etudiant etudiant) {
-        etudiant.setGroupe(this);
+        this.etudiants.add(etudiant);
+        if (!etudiant.isContainedGroupe(this)) {
+            etudiant.setGroupe(this);
+        }
     }
     public void removeEtudiant(Etudiant etudiant) {
         if(containsEtudiant(etudiant)) {
             this.etudiants.remove(etudiant);
         }
-        etudiant.setGroupe(null);
-
+        if (etudiant.existGroupe()) {
+            etudiant.setGroupe(null);
+        }
     }
     public boolean containsEtudiant(Etudiant etudiant) {
-        return etudiant.getGroupe()==this;
+        return this.etudiants.contains(etudiant);
     }
 }
