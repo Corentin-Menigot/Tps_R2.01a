@@ -3,7 +3,7 @@ package jeu;
 public class TestEtape2 {
     public static void main(String[] args) {
         //création des guerriers
-        Nain nain= new Nain();
+        Nain nain= new Nain( );
         ChefNain chefNain= new ChefNain();
         Elfe elfe= new Elfe();
         ChefElfe chefElfe= new ChefElfe();
