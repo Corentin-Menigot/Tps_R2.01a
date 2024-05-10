@@ -2,7 +2,7 @@ package jeu;
 
 public class Elfe extends Guerrier{
     //attributs
-    private final int RESSOURCE_BASE = 2;
+    private final int RESSOURCE = 2;
 
     //constructeur
     public Elfe(Chateau chateau) {super(chateau);}
@@ -13,4 +13,9 @@ public class Elfe extends Guerrier{
         //on renvoit les dégats d'un guerrier normal, multiplés par 2
         return super.getForce()*2;
     }
+    @Override
+    public int getRessourcesPourEntrainement() {
+        return this.RESSOURCE;
+    }
+
 }
