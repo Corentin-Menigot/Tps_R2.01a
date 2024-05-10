@@ -31,6 +31,6 @@ public class Chateau {
         this.ressources = this.ressources + this.RESSOURCE_AJOUTEE_PAR_TOUR;
     }
     public Couleur getCouleur() { return this.couleur ;}
-    public boolean estBleu() { return this.couleur.equals("Bleu");}
-    public boolean estRouge() { return this.couleur.equals("Rouge");}
+    public boolean estBleu() { return this.couleur == Couleur.Bleu;}
+    public boolean estRouge() { return this.couleur == Couleur.Rouge;}
 }

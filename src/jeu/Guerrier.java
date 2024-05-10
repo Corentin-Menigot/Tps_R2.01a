@@ -9,15 +9,20 @@ public abstract class Guerrier {
     private final int RESSOURCE_BASE = 1;
     private int pointsDeVie;
     private Chateau chateau;
+    private Couleur couleur;
 
     //constructeurs de la classe Guerrier
     Guerrier(Chateau chateau) {
-        this.pointsDeVie=100;
-        this.chateau = chateau;}
+        setPointDeVie(100);
+        setChateau(chateau);
+        this.couleur = this.chateau.getCouleur();
+    }
 
     //getters de la classe Guerrier
     public int getForce() {return this.FORCE_DE_BASE;}
     public int getPointDeVie() { return this.pointsDeVie;}
+    public int getRessourcesPourEntrainement() { return this.RESSOURCE_BASE ;}
+    public Couleur getCouleur() { return this.couleur ;}
 
     //méthodes de la classe Guerrier
     private void setPointDeVie(int pointDeVie) {
@@ -27,9 +32,11 @@ public abstract class Guerrier {
             this.pointsDeVie=pointDeVie;
         }
     }
+    public void setChateau(Chateau chateau) { this.chateau = chateau;}
 
     public boolean estVivant() { return this.pointsDeVie>0;}
-
+    public boolean estBleu() { return this.couleur == Couleur.Bleu;}
+    public boolean estRouge() { return this.couleur == Couleur.Rouge;}
     public void attaquer(Guerrier guerrier) {
         int degats=PlateauUtilitaire.De3(this.getForce());
         System.out.println("Dégats infligés: "+degats);
