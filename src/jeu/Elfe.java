@@ -1,6 +1,9 @@
 package jeu;
 
 public class Elfe extends Guerrier{
+    //attributs
+    private final int RESSOURCE_BASE = 2;
+
     //constructeur
     public Elfe(Chateau chateau) {super(chateau);}
 
