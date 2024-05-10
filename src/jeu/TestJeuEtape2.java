@@ -1,6 +1,9 @@
 package jeu;
 
 
+import java.util.HashSet;
+import java.util.Iterator;
+
 /**
  *
  * @author fbm
@@ -19,6 +22,7 @@ public class TestJeuEtape2 {
         // A COMPLETER : Ajouter les guerriers au chateau
 
         // A COMPLETER : Afficher les guerriers contenu dans le chateau (dans l'ordre d'entrainement)
+
 
         // A COMPLETER : Réaliser un premier entrainement puis afficher les guerriers prets aux combats
         
