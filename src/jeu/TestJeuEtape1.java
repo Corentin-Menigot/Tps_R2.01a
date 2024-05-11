@@ -1,8 +1,5 @@
 package jeu;
 
-
-import tp2.universite.UniversiteUtilitaire;
-
 /**
  *
  * @author fbm
