@@ -20,8 +20,9 @@ public class ChateauUtilitaire {
     public static void printListeGuerriers(ArrayList<Guerrier> listeGuerriers) {
         for (int i = 0; i < listeGuerriers.size(); i++) {
             //appelle la méthode printUnite pour afficher un guerrier
-            GuerrierUtilitaire.printUnite(listeGuerriers.get(i));
+            GuerrierUtilitaire.printlnUnite(listeGuerriers.get(i));
         }
+        System.out.println("-----------------------------------------\n");
     }
 
     /**
@@ -32,7 +33,7 @@ public class ChateauUtilitaire {
      * @param chateau -> le chateau duquel on affiche les guerriers novices
      */
   	public static void printChateauGuerriers(Chateau chateau) {
-        System.out.println("Guerriers du chateau: ");
+        System.out.println("Guerriers du chateau (dans l'ordre d'entrainement) : ");
         ArrayList<Guerrier> listeGuerriers = chateau.getGuerrierNovice();
         //appelle la méthode printListeGuerrier pour afficher la liste des guerriers réupérés du chateau
         printListeGuerriers(listeGuerriers);

@@ -75,6 +75,8 @@ public class Chateau {
         if (this.ressources > 0) {
             //logger pour préciser que l'entrainement est partiel et le nombre de ressources manquantes, l'entrainement sera géré au tour suivant si possible
         }
+        //incrémentation des ressources pour simuler une fin de tour comme précise dans TestJeuEtape2
+        this.incrementerRessources();
         return guerriersEntraines;
     }
     //rajouter logger pour dire entrainement de quoi + si entrainement complet/partiel + ressources dépensés

@@ -1,8 +1,8 @@
 package jeu;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 
-import java.util.HashSet;
-import java.util.Iterator;
 
 /**
  *
@@ -19,19 +19,38 @@ public class TestJeuEtape2 {
         //Création d'un objet chateau
         Chateau chateau1 = new Chateau(Couleur.Bleu);
 
-        // A COMPLETER : Ajouter les guerriers au chateau
+        //Ajouter les guerriers au chateau
+        //création des guerriers
         Nain nain1 = new Nain();
+        Nain nain2 = new Nain();
+        Elfe elfe1 = new Elfe();
+        Elfe elfe2 = new Elfe();
+        ChefElfe chefElfe1 = new ChefElfe();
 
-        // A COMPLETER : Afficher les guerriers contenu dans le chateau (dans l'ordre d'entrainement)
+        // ajoute des guerriers au chateau
+        chateau1.ajoutGuerrierNovice(nain1);
+        chateau1.ajoutGuerrierNovice(nain2);
+        chateau1.ajoutGuerrierNovice(elfe1);
+        chateau1.ajoutGuerrierNovice(elfe2);
+        chateau1.ajoutGuerrierNovice(chefElfe1);
 
-        // A COMPLETER : Réaliser un premier entrainement puis afficher les guerriers prets aux combats
+        //Afficher les guerriers contenu dans le chateau (dans l'ordre d'entrainement)
+        ChateauUtilitaire.printChateauGuerriers(chateau1);
+
+        //Réaliser un premier entrainement puis afficher les guerriers prets aux combats
+        ArrayList<Guerrier> guerriersEntraines = new ArrayList<>();
+        guerriersEntraines = chateau1.entrainer();
+        System.out.println("Liste des guerriers entrainés: ");
+        ChateauUtilitaire.printListeGuerriers(guerriersEntraines);
         
-        // A COMPLETER : Incrementer les ressources dans un chateau (simuler la fin d'un tour et donc l'ajout de ressources supplémentaires)
+        //Incrementer les ressources dans un chateau (simuler la fin d'un tour et donc l'ajout de ressources supplémentaires)
         // dans notre cas l'incrémentation se fait directement dans la méthode entrainement
         
-        // A COMPLETER : Réaliser un deuxième entrainement puis afficher les guerriers prets aux combats
+        //Réaliser un deuxième entrainement puis afficher les guerriers prets aux combats
+        guerriersEntraines = chateau1.entrainer();
+        ChateauUtilitaire.printListeGuerriers(guerriersEntraines);
         
-        // A COMPLETER : Réaliser une itération pour simuler 10 tours : entrainement, affichage des guerriers prets et incrementation des ressources
+        //Réaliser une itération pour simuler 10 tours : entrainement, affichage des guerriers prets et incrementation des ressources
         // N'hésitez pas à rajouter des guerriers au chateau pour tester votre chateau
 
         
