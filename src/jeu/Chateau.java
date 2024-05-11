@@ -18,6 +18,7 @@ public class Chateau {
     }
     public void ajoutGuerrierNovice(Guerrier guerrier) {
         this.guerriersNovices.add(guerrier);
+        guerrier.setChateau(this);
     }
     public ArrayList<Guerrier> getGuerrierNovice() {
         return this.guerriersNovices;
@@ -25,14 +26,13 @@ public class Chateau {
     public ArrayList<Guerrier> entrainer() {
         ArrayList<Guerrier> guerriersEntraines = this.guerriersNovices;
         int i = 0;
-        while (!this.guerriersNovices.isEmpty() && this.ressources > 0) {
+        while (!this.guerriersNovices.isEmpty() && this.ressources >= this.guerriersNovices.get(0).getRessourcesPourEntrainement()) {
             if (this.guerriersNovices.get(0).getRessourcesPourEntrainement() <= this.ressources) {
                 guerriersEntraines.add(this.guerriersNovices.get(0));
                 this.ressources = this.ressources - this.guerriersNovices.get(0).getRessourcesPourEntrainement();
                 this.guerriersNovices.remove(0);
             } else {
-                this.ressources = 0;
-
+                //logger pour préciser que l'entrainement est partiel et le nombre de ressources manquantes, l'entrainement sera géré au tour suivant si possible
             }
         }
         return guerriersEntraines;

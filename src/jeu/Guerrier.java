@@ -12,10 +12,8 @@ public abstract class Guerrier {
     private Couleur couleur;
 
     //constructeurs de la classe Guerrier
-    Guerrier(Chateau chateau) {
-        setPointDeVie(100);
-        setChateau(chateau);
-        this.couleur = this.chateau.getCouleur();
+    Guerrier() {
+        setPointDeVie(PV_MAX_DE_BASE);
     }
 
     //getters de la classe Guerrier
@@ -32,7 +30,10 @@ public abstract class Guerrier {
             this.pointsDeVie=pointDeVie;
         }
     }
-    public void setChateau(Chateau chateau) { this.chateau = chateau;}
+    public void setChateau(Chateau chateau) {
+        this.chateau = chateau;
+        this.couleur = this.chateau.getCouleur();
+    }
 
     public boolean estVivant() { return this.pointsDeVie>0;}
     public boolean estBleu() { return this.couleur == Couleur.Bleu;}
