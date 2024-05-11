@@ -20,19 +20,11 @@ public class TestJeuEtape2 {
         Chateau chateau1 = new Chateau(Couleur.Bleu);
 
         //Ajouter les guerriers au chateau
-        //création des guerriers
-        Nain nain1 = new Nain();
-        Nain nain2 = new Nain();
-        Elfe elfe1 = new Elfe();
-        Elfe elfe2 = new Elfe();
-        ChefElfe chefElfe1 = new ChefElfe();
-
-        // ajoute des guerriers au chateau
-        chateau1.ajoutGuerrierNovice(nain1);
-        chateau1.ajoutGuerrierNovice(nain2);
-        chateau1.ajoutGuerrierNovice(elfe1);
-        chateau1.ajoutGuerrierNovice(elfe2);
-        chateau1.ajoutGuerrierNovice(chefElfe1);
+        chateau1.ajoutGuerrierNovice(new Nain());
+        chateau1.ajoutGuerrierNovice(new Nain());
+        chateau1.ajoutGuerrierNovice(new Elfe());
+        chateau1.ajoutGuerrierNovice(new Elfe());
+        chateau1.ajoutGuerrierNovice(new ChefElfe());
 
         //Afficher les guerriers contenu dans le chateau (dans l'ordre d'entrainement)
         ChateauUtilitaire.printChateauGuerriers(chateau1);
@@ -40,7 +32,7 @@ public class TestJeuEtape2 {
         //Réaliser un premier entrainement puis afficher les guerriers prets aux combats
         ArrayList<Guerrier> guerriersEntraines = new ArrayList<>();
         guerriersEntraines = chateau1.entrainer();
-        System.out.println("Liste des guerriers entrainés: ");
+        System.out.println("Liste des guerriers entrainés au tour 1 : ");
         ChateauUtilitaire.printListeGuerriers(guerriersEntraines);
         
         //Incrementer les ressources dans un chateau (simuler la fin d'un tour et donc l'ajout de ressources supplémentaires)
@@ -48,11 +40,24 @@ public class TestJeuEtape2 {
         
         //Réaliser un deuxième entrainement puis afficher les guerriers prets aux combats
         guerriersEntraines = chateau1.entrainer();
+        System.out.println("Liste des guerriers entrainés au tour 2 : ");
         ChateauUtilitaire.printListeGuerriers(guerriersEntraines);
         
         //Réaliser une itération pour simuler 10 tours : entrainement, affichage des guerriers prets et incrementation des ressources
         // N'hésitez pas à rajouter des guerriers au chateau pour tester votre chateau
+        chateau1.ajoutGuerrierNovice(new ChefNain());
+        chateau1.ajoutGuerrierNovice(new Nain());
+        chateau1.ajoutGuerrierNovice(new Elfe());
+        chateau1.ajoutGuerrierNovice(new Elfe());
+        chateau1.ajoutGuerrierNovice(new Nain());
+        chateau1.ajoutGuerrierNovice(new Nain());
+        chateau1.ajoutGuerrierNovice(new ChefElfe());
 
+        for (int i = 3; i < 13; i++) {
+            guerriersEntraines = chateau1.entrainer();
+            System.out.println("Liste des guerriers entrainés au tour "+i+" : ");
+            ChateauUtilitaire.printListeGuerriers(guerriersEntraines);
+        }
         
     }
 }

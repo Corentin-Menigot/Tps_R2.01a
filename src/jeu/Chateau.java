@@ -63,7 +63,7 @@ public class Chateau {
      * @return la liste des guerriers qu'on a pu entrainer avec les ressources du chateau à ce tour
      */
     public ArrayList<Guerrier> entrainer() {
-        ArrayList<Guerrier> guerriersEntraines = this.guerriersNovices;
+        ArrayList<Guerrier> guerriersEntraines = new ArrayList<>();
         //on boucle sur le premier Guerrier de la liste des guerriers novices tant qu'il y en a un ou qu'il reste assez de ressources pour l'entrainer
         while (!this.guerriersNovices.isEmpty() && this.ressources >= this.guerriersNovices.get(0).getRessourcesPourEntrainement()) {
             //on ajoute au guerriers entrainés le premier guerrier de la liste, on decrémente les ressources du chateau
