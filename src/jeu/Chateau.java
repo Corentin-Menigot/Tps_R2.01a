@@ -24,10 +24,23 @@ public class Chateau {
     }
     public ArrayList<Guerrier> entrainer() {
         ArrayList<Guerrier> guerriersEntraines = this.guerriersNovices;
+        int i = 0;
+        while (!this.guerriersNovices.isEmpty() && this.ressources > 0) {
+            if (this.guerriersNovices.get(0).getRessourcesPourEntrainement() <= this.ressources) {
+                guerriersEntraines.add(this.guerriersNovices.get(0));
+                this.ressources = this.ressources - this.guerriersNovices.get(0).getRessourcesPourEntrainement();
+                this.guerriersNovices.remove(0);
+            } else {
+                this.ressources = 0;
 
-        return guerriersEntraines
-                ;
+            }
+        }
+        return guerriersEntraines;
     }
+    //rajouter logger pour dire entrainement de quoi + si entrainement complet/partiel + ressources dépensés
+
+
+
     private void incrementerRessources() {
         this.ressources = this.ressources + this.RESSOURCE_AJOUTEE_PAR_TOUR;
     }
