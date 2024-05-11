@@ -5,7 +5,7 @@ public class ChefElfe extends Elfe{
     private final int RESSOURCE = 4;
 
     //constructeur
-    public ChefElfe(Chateau chateau) {super(chateau);}
+    public ChefElfe() {super();}
     //méthodes de la classe ChefElfe
     @Override
     public int getForce() {

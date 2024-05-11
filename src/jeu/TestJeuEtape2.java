@@ -16,10 +16,11 @@ public class TestJeuEtape2 {
         // étape 4 : tester les affichages
         // étape 5 : tester l'entrainement 
         
-        // A COMPLETER : Création d'un objet chateau
+        //Création d'un objet chateau
         Chateau chateau1 = new Chateau(Couleur.Bleu);
 
         // A COMPLETER : Ajouter les guerriers au chateau
+        Nain nain1 = new Nain();
 
         // A COMPLETER : Afficher les guerriers contenu dans le chateau (dans l'ordre d'entrainement)
 

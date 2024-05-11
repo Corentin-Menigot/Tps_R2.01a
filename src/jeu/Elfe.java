@@ -5,7 +5,7 @@ public class Elfe extends Guerrier{
     private final int RESSOURCE = 2;
 
     //constructeur
-    public Elfe(Chateau chateau) {super(chateau);}
+    public Elfe() {super();}
 
     //méthodes de la classe Elfe
     @Override

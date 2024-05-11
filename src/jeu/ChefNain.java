@@ -4,7 +4,7 @@ public class ChefNain extends Nain{
     //attributs
     private final int RESSOURCE = 3;
     //constructeur
-    public ChefNain(Chateau chateau) {super(chateau);}
+    public ChefNain() {super();}
 
     //méthodes de la classe ChefNain
     @Override

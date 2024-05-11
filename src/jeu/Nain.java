@@ -2,7 +2,7 @@ package jeu;
 
 public class Nain extends Guerrier {
     //constructeur
-    public Nain(Chateau chateau) {super(chateau);}
+    public Nain() {super();}
 
     //méthodes de la classe Nain
     @Override
