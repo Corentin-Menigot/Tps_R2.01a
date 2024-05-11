@@ -1,1 +1,38 @@
-[2024-04-12T10:58:58.515643809+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TestTableDOperation main | Mode sans erreur true[2024-04-12T10:58:58.534313546+02:00[Europe/Paris]] SEVERE     | (tp5) tp5.tabledoperation.TableDOperation <clinit> | Cannot read configuration file[2024-04-12T10:58:58.539724296+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 0.1 et 16.9[2024-04-12T10:58:58.542726109+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 5.1 et 3.5[2024-04-12T10:58:58.543151507+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 0.1 et 6.6[2024-04-12T10:58:58.543508269+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 6.5 et 2.6[2024-04-12T10:58:58.543843750+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TableDOperation initialisation | Création d'opération avec les termes 7.1 et 1.5[2024-04-12T10:58:58.544162057+02:00[Europe/Paris]] INFO       | (tp5) tp5.tabledoperation.TestTableDOperation main | Type d'operation : ADDITION
+[2024-05-11T23:54:40.566438900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
+[2024-05-11T23:54:40.603605400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
+[2024-05-11T23:54:40.613840400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 100
+[2024-05-11T23:54:40.614844400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Elfe
+[2024-05-11T23:54:40.614844400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du ChefNain à 100
+[2024-05-11T23:54:40.615846100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un ChefNain
+[2024-05-11T23:54:40.615846100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du ChefElfe à 100
+[2024-05-11T23:54:40.615846100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un ChefElfe
+[2024-05-11T23:54:40.625865600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 80
+[2024-05-11T23:54:40.625865600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Elfe subit 20 dégats
+[2024-05-11T23:54:40.627369400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Nain attaque Elfe
+[2024-05-11T23:54:40.627369400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 78
+[2024-05-11T23:54:40.627961700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Nain subit 22 dégats
+[2024-05-11T23:54:40.627961700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Elfe attaque Nain
+[2024-05-11T23:54:40.628498400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 61
+[2024-05-11T23:54:40.628498400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Elfe subit 19 dégats
+[2024-05-11T23:54:40.629503700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Nain attaque Elfe
+[2024-05-11T23:54:40.629503700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 61
+[2024-05-11T23:54:40.629503700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Nain subit 17 dégats
+[2024-05-11T23:54:40.629503700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Elfe attaque Nain
+[2024-05-11T23:54:40.630504600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 40
+[2024-05-11T23:54:40.630504600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Elfe subit 21 dégats
+[2024-05-11T23:54:40.630504600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Nain attaque Elfe
+[2024-05-11T23:54:40.631506300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 43
+[2024-05-11T23:54:40.631506300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Nain subit 18 dégats
+[2024-05-11T23:54:40.631506300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Elfe attaque Nain
+[2024-05-11T23:54:40.631506300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 22
+[2024-05-11T23:54:40.631506300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Elfe subit 18 dégats
+[2024-05-11T23:54:40.631506300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Nain attaque Elfe
+[2024-05-11T23:54:40.633011300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 22
+[2024-05-11T23:54:40.633011300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Nain subit 21 dégats
+[2024-05-11T23:54:40.633011300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Elfe attaque Nain
+[2024-05-11T23:54:40.634016500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 3
+[2024-05-11T23:54:40.634016500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Elfe subit 19 dégats
+[2024-05-11T23:54:40.634016500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Nain attaque Elfe
+[2024-05-11T23:54:40.634016500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 0
+[2024-05-11T23:54:40.635017400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier subirDegats | Le Nain subit 22 dégats
+[2024-05-11T23:54:40.635017400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier attaquer | Elfe attaque Nain

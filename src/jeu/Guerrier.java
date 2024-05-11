@@ -44,8 +44,8 @@ public abstract class Guerrier {
      *
      */
     Guerrier() {
-        setPointDeVie(PV_MAX_DE_BASE);
         LOGGER.log(Level.INFO, "Création d'un "+this.getClass().getSimpleName());
+        setPointDeVie(PV_MAX_DE_BASE);
     }
 
     //getters de la classe Guerrier
