@@ -1,6 +1,8 @@
 package jeu;
 
 public class Nain extends Guerrier {
+    //attributs
+    private final int RESSOURCE = 1;
     //constructeur
     public Nain() {super();}
 
