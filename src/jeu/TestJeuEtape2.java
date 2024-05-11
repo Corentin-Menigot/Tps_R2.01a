@@ -23,7 +23,6 @@ public class TestJeuEtape2 {
 
         // A COMPLETER : Afficher les guerriers contenu dans le chateau (dans l'ordre d'entrainement)
 
-
         // A COMPLETER : Réaliser un premier entrainement puis afficher les guerriers prets aux combats
         
         // A COMPLETER : Incrementer les ressources dans un chateau (simuler la fin d'un tour et donc l'ajout de ressources supplémentaires)
