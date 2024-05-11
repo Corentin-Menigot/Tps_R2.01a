@@ -1,10 +1,33 @@
 package jeu;
 
+import tp5.TestLogging;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
 /**
  *
  * @author fbm
  */
 public abstract class Guerrier {
+    private static Logger LOGGER = Logger.getLogger(TestLogging.class.getPackageName());
+    // Configuration du logger
+    // Récupérarion du gestionnaire de logs.
+    private static final LogManager logManager = LogManager.getLogManager();
+    // Configuration du logger
+    // EditConfiguration > Modify options > add VM options :
+    // -Djava.util.logging.config.file=conf/debug-logging.properties
+    static{
+        try {
+            logManager.readConfiguration( new FileInputStream("conf/debuglogging.properties") );
+        } catch ( IOException exception ) {
+            LOGGER.log( Level.SEVERE, "Cannot read configuration file", exception );
+        }
+    }
+
     //attributs de la classe Guerrier
     private final int FORCE_DE_BASE = 10;
     private final int PV_MAX_DE_BASE = 100;
@@ -22,6 +45,7 @@ public abstract class Guerrier {
      */
     Guerrier() {
         setPointDeVie(PV_MAX_DE_BASE);
+        LOGGER.log(Level.INFO, "Création d'un "+this.getClass().getSimpleName());
     }
 
     //getters de la classe Guerrier
@@ -74,6 +98,7 @@ public abstract class Guerrier {
         } else {
             this.pointsDeVie=pointDeVie;
         }
+        LOGGER.log(Level.INFO, "mise à jour des points de vie du "+this.getClass().getSimpleName()+" à "+this.pointsDeVie);
     }
 
     /**
@@ -85,6 +110,7 @@ public abstract class Guerrier {
     public void setChateau(Chateau chateau) {
         this.chateau = chateau;
         this.couleur = this.chateau.getCouleur();
+        LOGGER.log(Level.INFO, "mise à jour du chateau et de la couleur du "+this.getClass().getSimpleName());
     }
 
     /**
@@ -123,6 +149,7 @@ public abstract class Guerrier {
         int degats=PlateauUtilitaire.De3(this.getForce());
         System.out.println("Dégats infligés: "+degats);
         guerrier.subirDegats(degats);
+        LOGGER.log(Level.INFO, this.getClass().getSimpleName()+" attaque "+guerrier.getClass().getSimpleName());
     }
 
     /**
@@ -131,5 +158,8 @@ public abstract class Guerrier {
      *
      * @param degats -> la valeur qui sera soustraite aux points de vie du guerrier actuel (this)
      */
-    protected void subirDegats(int degats) { setPointDeVie(this.pointsDeVie-degats);}
+    protected void subirDegats(int degats) {
+        setPointDeVie(this.pointsDeVie-degats);
+        LOGGER.log(Level.INFO, "Le "+this.getClass().getSimpleName()+" subit "+degats+" dégats");
+    }
 }
