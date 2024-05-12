@@ -92,12 +92,12 @@ public class Chateau {
             //de son cout d'entrainement et on le supprime des guerriers novices
                 guerriersEntraines.add(this.guerriersNovices.get(0));
                 this.ressources = this.ressources - this.guerriersNovices.get(0).getRessourcesPourEntrainement();
-                LOGGER.log(Level.INFO, "Entrainement complet de "+this.guerriersNovices.get(0));
+                LOGGER.log(Level.INFO, "Entrainement complet de "+this.guerriersNovices.get(0).getClass().getSimpleName());
                 this.guerriersNovices.remove(0);
             }
         if (this.ressources > 0) {
             //logger pour préciser que l'entrainement est partiel et le nombre de ressources manquantes, l'entrainement sera géré au tour suivant si possible
-            LOGGER.log(Level.INFO, "Entrainement partiel de "+this.guerriersNovices.get(0)+", ressources manquantes: "+
+            LOGGER.log(Level.INFO, "Entrainement partiel de "+this.guerriersNovices.get(0).getClass().getSimpleName()+", ressources manquantes: "+
                     (this.guerriersNovices.get(0).getRessourcesPourEntrainement()-this.ressources));
         }
         LOGGER.log(Level.INFO, "Plus d'entrainements possible ce tour");
@@ -115,7 +115,7 @@ public class Chateau {
      */
     private void incrementerRessources() {
         this.ressources = this.ressources + this.RESSOURCE_AJOUTEE_PAR_TOUR;
-        LOGGER.log(Level.INFO, "Ajout de "+this.RESSOURCE_AJOUTEE_PAR_TOUR+" au chateau");
+        LOGGER.log(Level.INFO, "Ajout de "+this.RESSOURCE_AJOUTEE_PAR_TOUR+" de ressources au chateau");
     }
 
     /**
