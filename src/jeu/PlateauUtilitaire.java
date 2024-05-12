@@ -25,7 +25,7 @@ public class PlateauUtilitaire {
      *
      * On lance un dé 3 face le nombre de fois de nombreLances
      *
-     * @param nombreLances
+     * @param nombreLances -> le nombre de fois qu'on lance le dés à 3 faces
      * @return la somme des nombresLances lancés d'un dé 3
      */
     public static int De3(int nombreLances) {
