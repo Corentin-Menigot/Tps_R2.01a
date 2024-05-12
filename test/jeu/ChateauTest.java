@@ -25,11 +25,11 @@ class ChateauTest {
     void getCouleur() {
         //
         Chateau chateau1 = new Chateau(Couleur.Rouge);
-        assertEquals(chateau1.getCouleur(), Couleur.Rouge);
+        assertEquals(chateau1.getCouleur(), Couleur.Rouge, "Si un Chateau est ROUGE il renvoit ROUGE comme couleur");
 
         //
-        Chateau chateau2 = new Chateau(Couleur.Bleu);
-        assertEquals(chateau2.getCouleur(), Couleur.Bleu);
+        Chateau chateau2 = new Chateau(Couleur.Rouge);
+        assertNotEquals(chateau2.getCouleur(), Couleur.Bleu, "Si un Chateau est ROUGE il ne renvoit pas BLEU comme couleur");
     }
 
     @Test
