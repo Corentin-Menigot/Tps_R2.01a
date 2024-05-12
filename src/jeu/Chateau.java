@@ -38,7 +38,6 @@ public class Chateau {
     private Couleur couleur;
 
     //constructeur
-
     /**
      *
      * Constructeur de la classe Chateau
@@ -49,6 +48,7 @@ public class Chateau {
         this.ressources = this.RESSOURCES_INITIAL;
         this.couleur = couleur;
         this.guerriersNovices = new ArrayList<>();
+        LOGGER.log(Level.INFO, "Création d'un chateau de couleur "+this.couleur);
     }
 
     /**
@@ -61,6 +61,7 @@ public class Chateau {
     public void ajoutGuerrierNovice(Guerrier guerrier) {
         this.guerriersNovices.add(guerrier);
         guerrier.setChateau(this);
+        LOGGER.log(Level.INFO, "Ajout d'un "+guerrier.getClass().getSimpleName()+" au chateau");
     }
 
     /**
@@ -91,11 +92,15 @@ public class Chateau {
             //de son cout d'entrainement et on le supprime des guerriers novices
                 guerriersEntraines.add(this.guerriersNovices.get(0));
                 this.ressources = this.ressources - this.guerriersNovices.get(0).getRessourcesPourEntrainement();
+                LOGGER.log(Level.INFO, "Entrainement complet de "+this.guerriersNovices.get(0));
                 this.guerriersNovices.remove(0);
             }
         if (this.ressources > 0) {
             //logger pour préciser que l'entrainement est partiel et le nombre de ressources manquantes, l'entrainement sera géré au tour suivant si possible
+            LOGGER.log(Level.INFO, "Entrainement partiel de "+this.guerriersNovices.get(0)+", ressources manquantes: "+
+                    (this.guerriersNovices.get(0).getRessourcesPourEntrainement()-this.ressources));
         }
+        LOGGER.log(Level.INFO, "Plus d'entrainements possible ce tour");
         //incrémentation des ressources pour simuler une fin de tour comme précise dans TestJeuEtape2
         this.incrementerRessources();
         return guerriersEntraines;
@@ -110,6 +115,7 @@ public class Chateau {
      */
     private void incrementerRessources() {
         this.ressources = this.ressources + this.RESSOURCE_AJOUTEE_PAR_TOUR;
+        LOGGER.log(Level.INFO, "Ajout de "+this.RESSOURCE_AJOUTEE_PAR_TOUR+" au chateau");
     }
 
     /**
