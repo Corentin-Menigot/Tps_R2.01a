@@ -1,86 +1,16 @@
-[2024-05-12T14:14:57.055430200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T14:14:57.060738400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T14:14:57.061738700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
-[2024-05-12T14:14:57.063738+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
-[2024-05-12T14:14:57.064243300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T14:14:57.064243300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T14:14:57.065248700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
-[2024-05-12T14:14:57.065248700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
-[2024-05-12T14:14:57.066249100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Elfe
-[2024-05-12T14:14:57.066249100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 100
-[2024-05-12T14:14:57.066249100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Elfe
-[2024-05-12T14:14:57.067248+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Elfe au chateau
-[2024-05-12T14:14:57.067248+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Elfe
-[2024-05-12T14:14:57.067248+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 100
-[2024-05-12T14:14:57.067248+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Elfe
-[2024-05-12T14:14:57.068681400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Elfe au chateau
-[2024-05-12T14:14:57.068681400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un ChefElfe
-[2024-05-12T14:14:57.068681400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du ChefElfe à 100
-[2024-05-12T14:14:57.069689500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du ChefElfe
-[2024-05-12T14:14:57.069689500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un ChefElfe au chateau
-[2024-05-12T14:14:57.076199100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement complet de Nain
-[2024-05-12T14:14:57.076199100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement complet de Nain
-[2024-05-12T14:14:57.077199900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement partiel de Elfe, ressources manquantes: 1
-[2024-05-12T14:14:57.077199900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.079201100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.080527800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement complet de Elfe
-[2024-05-12T14:14:57.080527800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.080527800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.081528400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un ChefNain
-[2024-05-12T14:14:57.081528400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du ChefNain à 100
-[2024-05-12T14:14:57.081528400+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du ChefNain
-[2024-05-12T14:14:57.082526+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un ChefNain au chateau
-[2024-05-12T14:14:57.082526+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T14:14:57.082526+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T14:14:57.082526+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
-[2024-05-12T14:14:57.083527200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
-[2024-05-12T14:14:57.083527200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Elfe
-[2024-05-12T14:14:57.083527200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 100
-[2024-05-12T14:14:57.083527200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Elfe
-[2024-05-12T14:14:57.083527200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Elfe au chateau
-[2024-05-12T14:14:57.083527200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Elfe
-[2024-05-12T14:14:57.084527100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Elfe à 100
-[2024-05-12T14:14:57.085033+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Elfe
-[2024-05-12T14:14:57.085033+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Elfe au chateau
-[2024-05-12T14:14:57.085033+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T14:14:57.085033+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T14:14:57.086039100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
-[2024-05-12T14:14:57.086039100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
-[2024-05-12T14:14:57.086039100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T14:14:57.087038800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T14:14:57.087038800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
-[2024-05-12T14:14:57.087038800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
-[2024-05-12T14:14:57.087038800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un ChefElfe
-[2024-05-12T14:14:57.088040+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du ChefElfe à 100
-[2024-05-12T14:14:57.088040+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du ChefElfe
-[2024-05-12T14:14:57.088040+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un ChefElfe au chateau
-[2024-05-12T14:14:57.088040+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement partiel de Elfe, ressources manquantes: 1
-[2024-05-12T14:14:57.088040+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.088040+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.089039300+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement complet de Elfe
-[2024-05-12T14:14:57.089544200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.089544200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.089544200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement partiel de ChefElfe, ressources manquantes: 3
-[2024-05-12T14:14:57.089544200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.090549200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.090549200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement partiel de ChefElfe, ressources manquantes: 2
-[2024-05-12T14:14:57.090549200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.090549200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.090549200+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement partiel de ChefElfe, ressources manquantes: 1
-[2024-05-12T14:14:57.091549700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.091549700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.091549700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement complet de ChefElfe
-[2024-05-12T14:14:57.091549700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.091549700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.091549700+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement partiel de ChefNain, ressources manquantes: 2
-[2024-05-12T14:14:57.092549800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.092549800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.092549800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement partiel de ChefNain, ressources manquantes: 1
-[2024-05-12T14:14:57.092549800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.092549800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.093550+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement complet de ChefNain
-[2024-05-12T14:14:57.093550+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.093550+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
-[2024-05-12T14:14:57.093550+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Entrainement complet de Nain
-[2024-05-12T14:14:57.093550+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau entrainer | Plus d'entrainements possible ce tour
-[2024-05-12T14:14:57.094550600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau incrementerRessources | Ajout de 1 de ressources au chateau
+[2024-05-12T18:19:52.053919800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
+[2024-05-12T18:19:52.058926500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
+[2024-05-12T18:19:52.058926500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
+[2024-05-12T18:19:52.060429900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
+[2024-05-12T18:19:52.061435600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
+[2024-05-12T18:19:52.061942+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
+[2024-05-12T18:19:52.070465900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [31mRouge[0m
+[2024-05-12T18:19:52.070465900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
+[2024-05-12T18:19:52.071464900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
+[2024-05-12T18:19:52.071971100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
+[2024-05-12T18:19:52.071971100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
+[2024-05-12T18:19:52.071971100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
+[2024-05-12T18:19:52.072977500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
+[2024-05-12T18:19:52.076487800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [31mRouge[0m
+[2024-05-12T18:19:52.081486800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [34mBleu[0m
+[2024-05-12T18:19:52.081992+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [31mRouge[0m
