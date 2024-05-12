@@ -1,16 +1,2 @@
-[2024-05-12T18:19:52.053919800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T18:19:52.058926500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T18:19:52.058926500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
-[2024-05-12T18:19:52.060429900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
-[2024-05-12T18:19:52.061435600+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T18:19:52.061942+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T18:19:52.070465900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [31mRouge[0m
-[2024-05-12T18:19:52.070465900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T18:19:52.071464900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T18:19:52.071971100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setChateau | mise à jour du chateau et de la couleur du Nain
-[2024-05-12T18:19:52.071971100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau ajoutGuerrierNovice | Ajout d'un Nain au chateau
-[2024-05-12T18:19:52.071971100+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier <init> | Création d'un Nain
-[2024-05-12T18:19:52.072977500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Guerrier setPointDeVie | mise à jour des points de vie du Nain à 100
-[2024-05-12T18:19:52.076487800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [31mRouge[0m
-[2024-05-12T18:19:52.081486800+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [34mBleu[0m
-[2024-05-12T18:19:52.081992+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [31mRouge[0m
+[2024-05-12T18:26:57.828770900+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [31mRouge[0m
+[2024-05-12T18:26:57.856120500+02:00[Europe/Paris]] INFO       | (tp5) jeu.Chateau <init> | Création d'un chateau de couleur [34mBleu[0m
