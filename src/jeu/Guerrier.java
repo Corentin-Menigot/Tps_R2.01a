@@ -95,10 +95,11 @@ public abstract class Guerrier {
         //un guerrier ne peut pas avoir des points de vie négatif, on vérifit donc que la nouvelle valeur est supérieur à 0
         if (pointDeVie<0) {
             this.pointsDeVie=0;
+            LOGGER.log(Level.INFO, "Le "+this.getClass().getSimpleName()+" est mort (pdv à 0)");
         } else {
             this.pointsDeVie=pointDeVie;
+            LOGGER.log(Level.INFO, "mise à jour des points de vie du "+this.getClass().getSimpleName()+" à "+this.pointsDeVie);
         }
-        LOGGER.log(Level.INFO, "mise à jour des points de vie du "+this.getClass().getSimpleName()+" à "+this.pointsDeVie);
     }
 
     /**

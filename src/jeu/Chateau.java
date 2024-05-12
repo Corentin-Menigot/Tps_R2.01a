@@ -1,8 +1,29 @@
 package jeu;
 
+import tp5.TestLogging;
+
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class Chateau {
+    private static Logger LOGGER = Logger.getLogger(TestLogging.class.getPackageName());
+    // Configuration du logger
+    // Récupérarion du gestionnaire de logs.
+    private static final LogManager logManager = LogManager.getLogManager();
+    // Configuration du logger
+    // EditConfiguration > Modify options > add VM options :
+    // -Djava.util.logging.config.file=conf/debug-logging.properties
+    static{
+        try {
+            logManager.readConfiguration( new FileInputStream("conf/debuglogging.properties") );
+        } catch ( IOException exception ) {
+            LOGGER.log( Level.SEVERE, "Cannot read configuration file", exception );
+        }
+    }
     //attributs de la classe chateau
 
     //ressources du chateau en début de partie
